@@ -1,0 +1,7 @@
+detectLabels:
+  handler: src/handlers/findObject.handler
+  events:
+    - http:
+        path: find-object
+        method: get 
+        cors: true

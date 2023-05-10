@@ -1,0 +1,14 @@
+# Allow Amazon Rekognition
+- Effect: Allow
+  Action:
+    - rekognition:*
+  Resource: "*"
+# Allow S3
+- Effect: Allow
+  Action:
+    - s3:*
+  Resource: arn:aws:s3:::testing-logos
+- Effect: Allow
+  Action:
+    - s3:*
+  Resource: arn:aws:s3:::testing-logos/*

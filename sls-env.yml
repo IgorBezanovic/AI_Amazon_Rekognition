@@ -1,0 +1,4 @@
+# shared environment variables
+default: &default
+  SERVICE: ${self:service}
+  REGION: ${self:provider.region}

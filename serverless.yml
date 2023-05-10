@@ -1,0 +1,22 @@
+service: amazon-rekognition
+
+frameworkVersion: '3'
+
+plugins:
+  - serverless-plugin-typescript
+
+# Provider information
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: eu-west-1
+  memorySize: 256
+  timeout: 20
+  logRetentionInDays: 3
+  iam:
+    role:
+      statements: ${file(./sls-iamRoleStatements.yml)}
+  stackTags:
+    stack-name: ${self:service}-prod
+
+functions: ${file(./sls-functions.yml)}

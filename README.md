@@ -1,0 +1,1 @@
+# AmazonAI services - Amazon Rekognition

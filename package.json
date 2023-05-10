@@ -1,0 +1,22 @@
+{
+  "name": "amazonrekognition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1353.0",
+    "node-typescript": "^0.1.3"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.114",
+    "@types/node": "^18.15.11",
+    "serverless-plugin-typescript": "^2.1.4",
+    "typescript": "^5.0.4"
+  }
+}
