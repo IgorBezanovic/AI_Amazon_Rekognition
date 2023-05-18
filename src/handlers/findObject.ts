@@ -41,21 +41,21 @@ export const handler = async (): Promise<APIGatewayProxyResult>  => {
             Name: image.Key
           }
         },
-        MaxLabels: 10,
-        MinConfidence: 70,
+        // MaxLabels: 10,
+        // MinConfidence: 70,
         // ProjectVersionArn: `arn:aws:rekognition:eu-west-1:765891906457:project/${projectId}/version/latest/`,
         // CustomLabels: [labelId],
       };
     
       try {
         // Detect labels
-        const resultLabels = await rekognition.detectLabels(params).promise();
+        // const resultLabels = await rekognition.detectLabels(params).promise();
 
         // Detect custom labels
         // const resultLabels = await rekognition.detectCustomLabels(params).promise();
 
         // Detect text
-        // const resultLabels = await rekognition.detectText(params).promise();
+        const resultLabels = await rekognition.detectText(params).promise();
         console.log(`Labels detected for ${image.Key}:`, resultLabels);
         // console.log(`Labels detected for ${image.Key}:`, resultLabels);
       } catch (err) {

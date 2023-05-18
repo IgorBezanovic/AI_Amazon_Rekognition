@@ -2,6 +2,8 @@
 node_modules
 jspm_packages
 PutImgS3
+ResizeImages/input
+ResizeImages/output
 
 # Serverless directories
 .serverless
