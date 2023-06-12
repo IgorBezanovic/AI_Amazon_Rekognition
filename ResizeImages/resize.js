@@ -6,8 +6,8 @@ const inputDir = './input';
 const outputDir = './output';
 
 // define image dimensions
-const width = 2024;
-const height = 2024;
+const width = 4000;
+const height = 4000;
 
 // loop through all files in the input directory
 fs.readdir(inputDir, (err, files) => {

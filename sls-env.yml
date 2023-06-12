@@ -2,3 +2,4 @@
 default: &default
   SERVICE: ${self:service}
   REGION: ${self:provider.region}
+  PROJECT_FIND_LOGO_ARN: arn:aws:rekognition:eu-west-1:765891906457:project/find-logo/version/find-logo.2023-05-23T22.11.30/1684872690097
